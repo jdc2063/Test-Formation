@@ -24,6 +24,8 @@ Et enfin
 - php artisan migrate:fresh --seed
 - php artisan serv
 
+Vous n'aurez plus qu'à ouvrir votre navigateur et aller à l'url suivant:
+`http://127.0.0.1:8000/home`
 ## Information des URL
 
 Vous trouverez dans le fichier URL.pdf un récapitulatif des url, de leur objectif et éventuellement des valeurs attendus.

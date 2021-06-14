@@ -4,14 +4,14 @@
 
 ## Prérequis
 
-Vous aurez besoin de composer afin d'installer les dépendances de Laravel.
+Vous n'aurez besoin d'aucun prérequis.
 
 ## Commandes
 
 Une fois que vous aurez cloné le projet git, entrez dans le projet puis voici ce que vous devrez faire.
 
-- cd laravel/
-- composer install
+- cd test-tech/
+- php composer.phar install
 - cp .env.example .env
 - php artisan key:generate
 

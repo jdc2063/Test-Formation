@@ -20,30 +20,29 @@
     </head>
     <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            <form action="/attestation" method="POST" id="addproduct" enctype="multipart/form-data">
+            <form action="/new/etudiant" method="POST" id="addproduct" enctype="multipart/form-data">
 
                 <div class="container">
         
                     {{ csrf_field() }}
-        
-                    <select name="etudiant" id="etudiant" class="form-controle" onChange="NewMessage()" required>
+                    Nouvel etudiant
+                    <br>
+                    Nom :
+                    <input type="text" class="form-controle" id="inputnom" name="nom" required>
+                    <br>
+                    Prenom :
+                    <input type="text" class="form-controle" id="inputprenom" name="prenom" required>
+                    <br>
+                    Mail :
+                    <input type="mail" class="form-controle" id="inputmail" name="mail" required>
+                    <br>
+                    <select name="convention" id="convention" class="form-controle" required>
                         <option value="">--Please choose an option--</option>
-                        @foreach ($etudiants as $etudiant)
-                            <option id="test" value={{ $etudiant->idEtudiant }}> {{ $etudiant->nom }} {{ $etudiant->prenom }} </option>
+                        @foreach ($conventions as $convention)
+                            <option id="convention_id" value={{ $convention->idConvention }}> {{ $convention->nom }} </option>
                         @endforeach
                     </select>
                     <br>
-                    
-                    <label for="convention">Convention :</label>
-                    <input type="text" class="form-controle" value="" style="width: 300px" id="convention" name="convention" readonly="true">
-                    
-                    <br>
-                    
-                    <label for="message">Votre attestation :</label>
-                    <br>
-                    <textarea type="TextAera" value="" style="width: 485px; height: 180px" class="form-controle" id="message" name="message" readonly="readonly"></textarea>
-                    <br>
-                    
                     <div class="pull-right">
                         <button type="submit" class="btn btn-primary">Ajouter</button>
                     </div>            

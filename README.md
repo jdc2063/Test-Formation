@@ -33,7 +33,7 @@ Vous trouverez dans le fichier URL.pdf un récapitulatif des url, de leur object
 
 ### Création des attestations
 
-Page principale du projet, vous pourrez créer vos attestations ici. Choisissez votre nom afin de générer votre attestation avec la convention que vous êtes en train de suivre. Vous ne pourrez pas modifier votre convention mais vous pouvez modifier votre attestation. Appuyez sur le bouton "ajouter" afin d'enregistrer votre attestation.
+Page principale du projet, vous pourrez créer vos attestations ici. Choisissez votre nom afin de générer votre attestation avec la convention que vous êtes en train de suivre. Vous ne pourrez pas modifier votre convention mais vous pouvez modifier votre attestation. Il est impossible d'écrire une attestation avant d'avoir choisi votre nom. Appuyez sur le bouton "ajouter" afin d'enregistrer votre attestation.
 
 ### Création des conventions
 

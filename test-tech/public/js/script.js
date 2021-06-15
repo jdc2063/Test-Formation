@@ -20,7 +20,7 @@ function NewMessage() {
             var convention_name = document.querySelector('#convention');
             convention_name.value = data.convention.nom;
             
-            var attestation = document.querySelector('#attestation');
+            var attestation = document.querySelector('#message');
             attestation.removeAttribute('readonly');
             var message = "Bonjour " + data.etudiant.nom + " " + data.etudiant.prenom + ",\n\n\n"
             + "Vous avez suivi " + data.convention.nbHeur
